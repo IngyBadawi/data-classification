@@ -2,11 +2,11 @@ from sklearn.metrics import confusion_matrix, accuracy_score, classification_rep
 
 
 class Classifiers:
-    def __init__(self, sample_train, sample_test, label_train, label_test):
-        self.sample_train = sample_train
-        self.sample_test = sample_test
-        self.label_train = label_train
-        self.label_test = label_test
+    def __init__(self, samples_train, samples_test, labels_train, labels_test):
+        self.sample_train = samples_train
+        self.sample_test = samples_test
+        self.label_train = labels_train
+        self.label_test = labels_test
         self.label_predicted = None  # to be compared with label_test after testing sample_test
 
     def train(self):

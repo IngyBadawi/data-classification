@@ -1,4 +1,4 @@
-from classifiers import Classifiers
+from classifiers.classifiers import Classifiers
 
 
 class RandomForest(Classifiers):

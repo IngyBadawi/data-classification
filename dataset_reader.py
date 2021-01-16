@@ -1,3 +1,9 @@
+import random
+
+GAMMAS_SIZE = 12332
+HADRONS_SIZE = 6688
+
+
 class DataReader():
     def __init__(self, file_path):
         self.file = open(file_path, 'r')
@@ -20,11 +26,21 @@ class DataReader():
         h = hadron (background): 6688
         """
         samples, labels = [], []
+        gammas = []
+        hadrons = []
         line = self.file.readline()[:-1]  # to remove \n
         while len(line) != 0:
             features = line.split(',')
-            samples.append([float(features[i]) for i in range(10)])
-            labels.append(features[10])
+            if features[-1] == 'g':
+                gammas.append(([float(features[i]) for i in range(10)], features[10]))
+            else:
+                hadrons.append(([float(features[i]) for i in range(10)], features[10]))
             line = self.file.readline()[:-1]
+        random.shuffle(gammas)
+        for i in range(HADRONS_SIZE):
+            samples.append(gammas[i][0])
+            samples.append(hadrons[i][0])
+            labels.append(gammas[i][1])
+            labels.append(hadrons[i][1])
         self.file.close()
         return samples, labels

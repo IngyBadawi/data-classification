@@ -4,8 +4,7 @@ from classifiers.random_forest import RandomForest
 from classifiers.ada_boost import AdaBoost
 from classifiers.naive_bayes import NaiveBayes
 
-
-class Factory():
+class Factory:
     def __init__(self):
         self.classifiers = {
             "k_nearest_neighbor": KNearestNeighbors,
@@ -15,5 +14,5 @@ class Factory():
             "naive_bayes": NaiveBayes
         }
 
-    def factory(self, classifier, samples_train, samples_test, labels_train, labels_test):
-        return self.classifiers[classifier](samples_train, samples_test, labels_train, labels_test)
+    def get(self, classifier, samples, labels):
+        return self.classifiers[classifier](samples, labels)

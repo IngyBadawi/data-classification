@@ -1,3 +1,4 @@
+from constants import *
 from classifiers.classifiers import Classifiers
 
 

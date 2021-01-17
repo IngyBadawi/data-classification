@@ -1,4 +1,3 @@
-from constants import *
 from classifiers.classifiers import Classifiers
 from sklearn import tree
 import matplotlib.pyplot as plt
@@ -7,7 +6,6 @@ class DecisionTree(Classifiers):
     def __decision_tree(self):
         clf = tree.DecisionTreeClassifier()
         clf = clf.fit(self.sample_train, self.label_train)
-        print(self.sample_train.shape)
         self.label_predicted = clf.predict(self.sample_test)
         self.calculate_results()
         #tree.plot_tree(clf)

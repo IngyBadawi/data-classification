@@ -3,8 +3,8 @@ from classifiers.classifiers import Classifiers
 
 
 class DecisionTree(Classifiers):
-    def train(self):
+    def __decision_tree(self):
         pass
 
-    def decision_tree(self):
+    def train(self):
         pass

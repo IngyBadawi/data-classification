@@ -3,8 +3,8 @@ from classifiers.classifiers import Classifiers
 
 
 class KNearestNeighbors(Classifiers):
-    def train(self):
+    def __k_nearest_neighbor(self):
         pass
 
-    def k_nearest_neighbor(self):
+    def train(self):
         pass

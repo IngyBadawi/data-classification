@@ -3,8 +3,8 @@ from classifiers.classifiers import Classifiers
 
 
 class RandomForest(Classifiers):
-    def train(self):
+    def __random_forest(self):
         pass
 
-    def random_forest(self):
+    def train(self):
         pass

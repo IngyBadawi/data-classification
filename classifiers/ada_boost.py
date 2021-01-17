@@ -3,8 +3,8 @@ from classifiers.classifiers import Classifiers
 
 
 class AdaBoost(Classifiers):
-    def train(self):
+    def __ada_boost(self):
         pass
 
-    def ada_boost(self):
+    def train(self):
         pass

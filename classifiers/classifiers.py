@@ -25,4 +25,4 @@ class Classifiers:
         print(f'Misplaced labels: {count}')
         print("Confusion Matrix: ", confusion_matrix(self.label_test, self.label_predicted))
         print(f'Accuracy : {accuracy_score(self.label_test, self.label_predicted) * 100} %')
-        print("Report:",classification_report(self.label_test, self.label_predicted))
+        print("Report:", classification_report(self.label_test, self.label_predicted))

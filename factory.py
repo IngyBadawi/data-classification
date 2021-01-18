@@ -5,6 +5,7 @@ from classifiers.ada_boost import AdaBoost
 from classifiers.naive_bayes import NaiveBayes
 from classifiers.neural_network import NeuralNetwork
 
+
 class Factory:
     def __init__(self):
         self.classifiers = {

@@ -18,6 +18,8 @@ class KNearestNeighbors(Classifiers):
         print("Best: %f using %s" % (best_model.best_score_, best_params))
         self.label_predicted = best_model.predict(self.sample_test)
         self.calculate_results()
+        return n_neighbors, best_model.cv_results_['mean_test_score']
 
     def train(self):
-        self.__k_nearest_neighbor()
+        estimators, mean_scores = self.__k_nearest_neighbor()
+        self.plot(estimators,mean_scores,'K-Nearest Neighbors','N-Neighbors', 'Fitting Scores')

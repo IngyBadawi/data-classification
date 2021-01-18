@@ -23,6 +23,8 @@ class AdaBoost(Classifiers):
         # params = gsf.cv_results_['params']
         # for mean, stdev, param in zip(means, stds, params):
         #     print("%f (%f) with: %r" % (mean, stdev, param))
+        return n_estimators, gsf.cv_results_['mean_test_score']
 
     def train(self):
-        self.__ada_boost()
+        estimators, mean_scores = self.__ada_boost()
+        self.plot(estimators, mean_scores,'AdaBoost','N-Estimators', 'Fitting Scores')

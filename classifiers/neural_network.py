@@ -27,17 +27,17 @@ class NN(BaseEstimator):
 class NeuralNetwork(Classifiers):
     def __nerual_network(self):
         onehot_train_labels = self.onehot_encode(self.label_train)
-        """
-        param_grid = {
-            'h1' : list(range(1, 10)),
-            'h2' : list(range(1, 10))
-        }
-        grid_search = GridSearchCV(NN(), param_grid=param_grid, cv=5)
-        grid_search.fit(self.sample_train, onehot_train_labels)
-        best_params = grid_search.best_params_
-        print('Best params: ', best_params)
-        best_estimator = grid_search.best_estimator_
-        """
+        #
+        # param_grid = {
+        #     'h1' : list(range(1, 10)),
+        #     'h2' : list(range(1, 10))
+        # }
+        # grid_search = GridSearchCV(NN(), param_grid=param_grid, cv=5)
+        # grid_search.fit(self.sample_train, onehot_train_labels)
+        # best_params = grid_search.best_params_
+        # print('Best params: ', best_params)
+        # best_estimator = grid_search.best_estimator_
+
         # Best values were h1=10 & h2=10
         best_estimator = NN(h1=10, h2=10)
         best_estimator.fit(self.sample_train, onehot_train_labels)

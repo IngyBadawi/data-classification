@@ -18,6 +18,8 @@ class RandomForest(Classifiers):
         print("Best: %f using %s" % (gsf.best_score_, best_params))
         self.label_predicted = gsf.predict(self.sample_test)
         self.calculate_results()
+        return n_estimators, gsf.cv_results_['mean_test_score']
 
     def train(self):
-        self.__random_forest()
+        estimators, mean_scores = self.__random_forest()
+        self.plot(estimators, mean_scores,'Random Forest','N-Estimators', 'Fitting Scores')

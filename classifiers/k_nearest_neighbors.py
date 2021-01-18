@@ -5,6 +5,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 class KNearestNeighbors(Classifiers):
     def __k_nearest_neighbor(self):
+        return
         n_neighbors = list(range(1, int(round(HADRONS_SIZE**0.5))))
         hyperparameters = dict(n_neighbors = n_neighbors)
         knn = KNeighborsClassifier()

@@ -3,6 +3,7 @@ from classifiers.decision_tree import DecisionTree
 from classifiers.random_forest import RandomForest
 from classifiers.ada_boost import AdaBoost
 from classifiers.naive_bayes import NaiveBayes
+from classifiers.neural_network import NeuralNetwork
 
 class Factory:
     def __init__(self):
@@ -11,7 +12,8 @@ class Factory:
             "decision_tree": DecisionTree,
             "random_forest": RandomForest,
             "ada_boost": AdaBoost,
-            "naive_bayes": NaiveBayes
+            "naive_bayes": NaiveBayes,
+            "neural_network": NeuralNetwork
         }
 
     def get(self, classifier, samples, labels):

@@ -4,10 +4,6 @@
     <list default="true" id="1663d8cd-d652-4796-aa78-edae0a206c41" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifiers/ada_boost.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/ada_boost.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifiers/classifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/classifiers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifiers/random_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/random_forest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/factory.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +157,14 @@
       <option name="presentableId" value="Default" />
       <updated>1610869954938</updated>
     </task>
+    <task id="LOCAL-00001" summary="changes in adaboost,knn,random forest">
+      <created>1611005301103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1611005301103</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,5 +184,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changes in adaboost,knn,random forest" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes in adaboost,knn,random forest" />
   </component>
 </project>

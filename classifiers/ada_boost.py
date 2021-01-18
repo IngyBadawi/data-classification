@@ -18,11 +18,11 @@ class AdaBoost(Classifiers):
         print("Best: %f using %s" % (gsf.best_score_, best_params))
         self.label_predicted = gsf.predict(self.sample_test)
         self.calculate_results()
-        means = gsf.cv_results_['mean_test_score']
-        stds = gsf.cv_results_['std_test_score']
-        params = gsf.cv_results_['params']
-        for mean, stdev, param in zip(means, stds, params):
-            print("%f (%f) with: %r" % (mean, stdev, param))
+        # means = gsf.cv_results_['mean_test_score']
+        # stds = gsf.cv_results_['std_test_score']
+        # params = gsf.cv_results_['params']
+        # for mean, stdev, param in zip(means, stds, params):
+        #     print("%f (%f) with: %r" % (mean, stdev, param))
 
     def train(self):
         self.__ada_boost()

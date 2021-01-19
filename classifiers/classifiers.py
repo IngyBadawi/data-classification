@@ -37,16 +37,29 @@ class Classifiers:
             if self.label_predicted[i] != self.label_test[i]:
                 misplaced_labels += 1
 
+        misplaced_labels_ = str(misplaced_labels)
+        conf = confusion_matrix(self.label_test, self.label_predicted)
+        confusion_matrix_ = f"""
+                        Actual True     Actual False
+    
+    Predicted True      {conf[0][0]}              {conf[0][1]}
+    
+    Predicted False     {conf[1][0]}              {conf[1][1]}
+        """
+
+        accuracy_score_ = f'{accuracy_score(self.label_test, self.label_predicted) * 100} %'
+        classification_report_ = classification_report(self.label_test, self.label_predicted)
+
         data = {
-            'misplaced_labels' : misplaced_labels,
-            'confusion_matrix' : confusion_matrix(self.label_test, self.label_predicted),
-            'accuracy_score' : accuracy_score(self.label_test, self.label_predicted) * 100,
-            'classification_report' : classification_report(self.label_test, self.label_predicted)
+            'misplaced_labels': str(misplaced_labels),
+            'confusion_matrix': confusion_matrix_,
+            'accuracy_score': accuracy_score_,
+            'classification_report': classification_report_
         }
-        print(f"Misplaced labels: {data['misplaced_labels']}")
-        print(f"Confusion Matrix: {data['confusion_matrix']}")
-        print(f"Accuracy : {data['accuracy_score']} %")
-        print(f"Report: {data['classification_report']}")
+        print(f"Misplaced labels: {misplaced_labels_}")
+        print(f"Confusion Matrix: {confusion_matrix_}")
+        print(f"Accuracy : {accuracy_score_}")
+        print(f"Report: {classification_report_}")
 
         #save data
         os.makedirs(self.saving_path, 0o666, True)

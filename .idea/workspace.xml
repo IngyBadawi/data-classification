@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1663d8cd-d652-4796-aa78-edae0a206c41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Data_Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data_Classification.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/AdaBoost/AdaBoost_scores_graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/AdaBoost/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DecisionTree/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_scores_graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/KNearestNeighbors/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/NaiveBayes/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/RandomForest/RandomForest_scores_graph.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/RandomForest/data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifiers/ada_boost.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/ada_boost.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifiers/classifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/classifiers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifiers/neural_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/neural_network.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifiers/random_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/random_forest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -30,11 +34,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1nBiaz9dyvhOE4ti3tvaBpVg21S" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -176,6 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1610869954938</updated>
       <workItem from="1611006314389" duration="4019000" />
+      <workItem from="1611013924497" duration="1504000" />
     </task>
     <task id="LOCAL-00001" summary="changes in adaboost,knn,random forest">
       <created>1611005301103</created>
@@ -209,10 +218,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="changes in adaboost,knn,random forest" />
     <option name="LAST_COMMIT_MESSAGE" value="changes in adaboost,knn,random forest" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/data_classification$main.coverage" NAME="main Coverage Results" MODIFIED="1611010106521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/data_classification$main.coverage" NAME="main Coverage Results" MODIFIED="1611015440320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

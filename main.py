@@ -15,9 +15,13 @@ if __name__ == '__main__':
     dataset_extract = dataset.read()
     samples, labels = np.array(dataset_extract[0]), np.array(dataset_extract[1])
     factory = Factory()
-    st = time.time()
+    times = [time.time()]
     for classifier_name in CLASSIFIERS:
         classifier = factory.get(classifier_name, samples, labels)
         print(f'start training {classifier_name}')
         classifier.train()
-    print(f'total time = {time.time()-st}')
+        cur = time.time()
+        print((cur-times[-1])/60)
+        times.append(cur)
+
+    print(f'total time = {(times[-1]-times[0])/60}')

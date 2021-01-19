@@ -6,7 +6,7 @@ from classifiers.classifiers import Classifiers
 
 class RandomForest(Classifiers):
     def __random_forest(self):
-        n_estimators = list(range(1, 50))
+        n_estimators = list(range(1, MAX_ESTIMATORS))
         hyperparameters = dict(n_estimators=n_estimators)
         clf = RandomForestClassifier()
         grid_search = GridSearchCV(clf, hyperparameters, cv=5)

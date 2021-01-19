@@ -6,7 +6,7 @@ from sklearn.model_selection import GridSearchCV
 
 class AdaBoost(Classifiers):
     def __ada_boost(self):
-        n_estimators = list(range(1, 50))
+        n_estimators = list(range(1, MAX_ESTIMATORS))
         hyperparameters = dict(n_estimators=n_estimators)
         abc = AdaBoostClassifier(learning_rate=1)
         grid_search = GridSearchCV(abc, hyperparameters, cv=5)

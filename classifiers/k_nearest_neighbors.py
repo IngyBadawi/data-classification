@@ -6,7 +6,8 @@ from sklearn.neighbors import KNeighborsClassifier
 
 class KNearestNeighbors(Classifiers):
     def __k_nearest_neighbor(self):
-        n_neighbors = list(range(1, int(round(HADRONS_SIZE**0.5))))
+        #n_neighbors = list(range(1, int(round(HADRONS_SIZE**0.5))))
+        n_neighbors = list(range(1, MAX_ESTIMATORS))
         hyperparameters = dict(n_neighbors = n_neighbors)
         knn = KNeighborsClassifier()
         clf = GridSearchCV(knn, hyperparameters, cv=10)

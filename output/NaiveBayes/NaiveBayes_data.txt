@@ -1,25 +1,25 @@
 misplaced_labels: 
-1390
+1397
 
 
 confusion_matrix: 
 
-                        Actual True     Actual False
+                        Actual g     Actual h
     
-    Predicted True      1807              217
+    Predicted g      1808              216
     
-    Predicted False     1173              816
+    Predicted h     1181              808
         
 
 
 accuracy_score: 
-65.36257164216298 %
+65.18813854971343 %
 
 
 classification_report: 
               precision    recall  f1-score   support
 
-           g       0.61      0.89      0.72      2024
+           g       0.60      0.89      0.72      2024
            h       0.79      0.41      0.54      1989
 
     accuracy                           0.65      4013

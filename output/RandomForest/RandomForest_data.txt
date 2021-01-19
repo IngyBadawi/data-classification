@@ -4,11 +4,11 @@ misplaced_labels:
 
 confusion_matrix: 
 
-                        Actual True     Actual False
+                        Actual g     Actual h
     
-    Predicted True      1810              214
+    Predicted g      1804              220
     
-    Predicted False     343              1646
+    Predicted h     337              1652
         
 
 

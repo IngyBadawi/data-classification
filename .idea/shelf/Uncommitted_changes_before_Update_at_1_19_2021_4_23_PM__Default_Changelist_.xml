@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_1_19_2021_4_23_PM_[Default_Changelist]" date="1611066203279" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_19_2021_4_23_PM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 1/19/2021 4:23 PM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="output/RandomForest/RandomForest_scores_graph.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_19_2021_4_23_PM_[Default_Changelist]/RandomForest_scores_graph.png" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="output/AdaBoost/AdaBoost_scores_graph.png" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_19_2021_4_23_PM_[Default_Changelist]/AdaBoost_scores_graph.png" />
+  </binary>
+</changelist>

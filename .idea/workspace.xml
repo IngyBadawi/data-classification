@@ -2,19 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1663d8cd-d652-4796-aa78-edae0a206c41" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/output/AdaBoost/AdaBoost_scores_graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/AdaBoost/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/NaiveBayes/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/RandomForest/RandomForest_scores_graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/RandomForest/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/AdaBoost/AdaBoost_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/DecisionTree/DecisionTree_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/NaiveBayes/NaiveBayes_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/NeuralNetwork/NeuralNetwork_data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/RandomForest/RandomForest_data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Data_Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data_Classification.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/ada_boost.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/ada_boost.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/classifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/classifiers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/decision_tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/decision_tree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/naive_bayes.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/naive_bayes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classifiers/neural_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/neural_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/random_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/random_forest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/DecisionTree/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/DecisionTree/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/AdaBoost/AdaBoost_scores_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/AdaBoost/AdaBoost_scores_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/AdaBoost/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/DecisionTree/data.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_scores_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_scores_graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/KNearestNeighbors/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/KNearestNeighbors/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/KNearestNeighbors/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/NaiveBayes/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/NeuralNetwork/NeuralNetwork_scores_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/NeuralNetwork/NeuralNetwork_scores_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/NeuralNetwork/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/RandomForest/RandomForest_scores_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/RandomForest/RandomForest_scores_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/RandomForest/data.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +170,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifiers/neural_network.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -218,5 +236,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="changes in adaboost,knn,random forest" />
     <option name="LAST_COMMIT_MESSAGE" value="changes in adaboost,knn,random forest" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/data_classification$main.coverage" NAME="main Coverage Results" MODIFIED="1611089441278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

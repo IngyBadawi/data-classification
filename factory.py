@@ -9,12 +9,12 @@ from classifiers.neural_network import NeuralNetwork
 class Factory:
     def __init__(self):
         self.classifiers = {
-            "k_nearest_neighbor": KNearestNeighbors,
-            "decision_tree": DecisionTree,
-            "random_forest": RandomForest,
-            "ada_boost": AdaBoost,
-            "naive_bayes": NaiveBayes,
-            "neural_network": NeuralNetwork
+            "k nearest neighbor": KNearestNeighbors,
+            "decision tree": DecisionTree,
+            "random forest": RandomForest,
+            "ada boost": AdaBoost,
+            "naive bayes": NaiveBayes,
+            "neural network": NeuralNetwork
         }
 
     def get(self, classifier, samples, labels):

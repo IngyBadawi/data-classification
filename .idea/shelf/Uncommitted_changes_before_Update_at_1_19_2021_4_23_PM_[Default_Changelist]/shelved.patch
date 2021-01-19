@@ -1,0 +1,168 @@
+Index: output/AdaBoost/data.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/output/AdaBoost/data.txt b/output/AdaBoost/data.txt
+new file mode 100644
+--- /dev/null	(date 1611017171865)
++++ b/output/AdaBoost/data.txt	(date 1611017171865)
+@@ -0,0 +1,30 @@
++misplaced_labels: 
++697
++
++
++confusion_matrix: 
++
++                        Actual True     Actual False
++    
++    Predicted True      1690              334
++    
++    Predicted False     363              1626
++        
++
++
++accuracy_score: 
++82.63144779466734 %
++
++
++classification_report: 
++              precision    recall  f1-score   support
++
++           g       0.82      0.83      0.83      2024
++           h       0.83      0.82      0.82      1989
++
++    accuracy                           0.83      4013
++   macro avg       0.83      0.83      0.83      4013
++weighted avg       0.83      0.83      0.83      4013
++
++
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"1663d8cd-d652-4796-aa78-edae0a206c41\" name=\"Default Changelist\" comment=\"\">\r\n      <change afterPath=\"$PROJECT_DIR$/output/AdaBoost/AdaBoost_scores_graph.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/output/AdaBoost/data.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/output/DecisionTree/data.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_scores_graph.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/output/KNearestNeighbors/data.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/output/NaiveBayes/data.txt\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/output/RandomForest/RandomForest_scores_graph.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/output/RandomForest/data.txt\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/classifiers/ada_boost.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/classifiers/ada_boost.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/classifiers/classifiers.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/classifiers/classifiers.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/classifiers/k_nearest_neighbors.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/classifiers/k_nearest_neighbors.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/classifiers/random_forest.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/classifiers/random_forest.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/constants.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/constants.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/main.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/main.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1nBiaz9dyvhOE4ti3tvaBpVg21S\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"full.screen.before.presentation.mode\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Python.main\">\r\n    <configuration name=\"ada_boost\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Data_Classification\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/classifiers\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/classifiers/ada_boost.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"decision_tree\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Data_Classification\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/classifiers\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/classifiers/decision_tree.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"k_nearest_neighbors\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Data_Classification\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/classifiers\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/classifiers/k_nearest_neighbors.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"main\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Data_Classification\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/main.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"naive_bayes\" type=\"PythonConfigurationType\" factoryName=\"Python\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Data_Classification\" />\r\n      <option name=\"INTERPRETER_OPTIONS\" value=\"\" />\r\n      <option name=\"PARENT_ENVS\" value=\"true\" />\r\n      <envs>\r\n        <env name=\"PYTHONUNBUFFERED\" value=\"1\" />\r\n      </envs>\r\n      <option name=\"SDK_HOME\" value=\"\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$/classifiers\" />\r\n      <option name=\"IS_MODULE_SDK\" value=\"true\" />\r\n      <option name=\"ADD_CONTENT_ROOTS\" value=\"true\" />\r\n      <option name=\"ADD_SOURCE_ROOTS\" value=\"true\" />\r\n      <EXTENSION ID=\"PythonCoverageRunConfigurationExtension\" runner=\"coverage.py\" />\r\n      <option name=\"SCRIPT_NAME\" value=\"$PROJECT_DIR$/classifiers/naive_bayes.py\" />\r\n      <option name=\"PARAMETERS\" value=\"\" />\r\n      <option name=\"SHOW_COMMAND_LINE\" value=\"false\" />\r\n      <option name=\"EMULATE_TERMINAL\" value=\"false\" />\r\n      <option name=\"MODULE_MODE\" value=\"false\" />\r\n      <option name=\"REDIRECT_INPUT\" value=\"false\" />\r\n      <option name=\"INPUT_FILE\" value=\"\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Python.main\" />\r\n        <item itemvalue=\"Python.k_nearest_neighbors\" />\r\n        <item itemvalue=\"Python.ada_boost\" />\r\n        <item itemvalue=\"Python.naive_bayes\" />\r\n        <item itemvalue=\"Python.decision_tree\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"1663d8cd-d652-4796-aa78-edae0a206c41\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1610869954938</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1610869954938</updated>\r\n      <workItem from=\"1611006314389\" duration=\"4019000\" />\r\n      <workItem from=\"1611013924497\" duration=\"1504000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"changes in adaboost,knn,random forest\">\r\n      <created>1611005301103</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1611005301103</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\r\n                <map>\r\n                  <entry key=\"Show.Git.Branches\" value=\"false\" />\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"changes in adaboost,knn,random forest\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"changes in adaboost,knn,random forest\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/data_classification$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1611015440320\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"true\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f70ed0780d02bafc04f1ecaffe213d599f8a6e6d)
++++ b/.idea/workspace.xml	(date 1611066180324)
+@@ -4,19 +4,10 @@
+     <list default="true" id="1663d8cd-d652-4796-aa78-edae0a206c41" name="Default Changelist" comment="">
+       <change afterPath="$PROJECT_DIR$/output/AdaBoost/AdaBoost_scores_graph.png" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/output/AdaBoost/data.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/output/DecisionTree/data.txt" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_scores_graph.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/output/KNearestNeighbors/data.txt" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/output/NaiveBayes/data.txt" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/output/RandomForest/RandomForest_scores_graph.png" afterDir="false" />
+       <change afterPath="$PROJECT_DIR$/output/RandomForest/data.txt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/classifiers/ada_boost.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/ada_boost.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/classifiers/classifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/classifiers.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/classifiers/random_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/random_forest.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -184,7 +175,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1610869954938</updated>
+       <workItem from="1611006314389" duration="4019000" />
+-      <workItem from="1611013924497" duration="1504000" />
++      <workItem from="1611013924497" duration="2971000" />
+     </task>
+     <task id="LOCAL-00001" summary="changes in adaboost,knn,random forest">
+       <created>1611005301103</created>
+@@ -223,6 +214,6 @@
+     <option name="LAST_COMMIT_MESSAGE" value="changes in adaboost,knn,random forest" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/data_classification$main.coverage" NAME="main Coverage Results" MODIFIED="1611015440320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
++    <SUITE FILE_PATH="coverage/data_classification$main.coverage" NAME="main Coverage Results" MODIFIED="1611015448153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: output/NaiveBayes/data.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/output/NaiveBayes/data.txt b/output/NaiveBayes/data.txt
+new file mode 100644
+--- /dev/null	(date 1611017172215)
++++ b/output/NaiveBayes/data.txt	(date 1611017172215)
+@@ -0,0 +1,30 @@
++misplaced_labels: 
++1380
++
++
++confusion_matrix: 
++
++                        Actual True     Actual False
++    
++    Predicted True      1831              193
++    
++    Predicted False     1187              802
++        
++
++
++accuracy_score: 
++65.61176177423374 %
++
++
++classification_report: 
++              precision    recall  f1-score   support
++
++           g       0.61      0.90      0.73      2024
++           h       0.81      0.40      0.54      1989
++
++    accuracy                           0.66      4013
++   macro avg       0.71      0.65      0.63      4013
++weighted avg       0.71      0.66      0.63      4013
++
++
++
+Index: output/RandomForest/data.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/output/RandomForest/data.txt b/output/RandomForest/data.txt
+new file mode 100644
+--- /dev/null	(date 1611016574316)
++++ b/output/RandomForest/data.txt	(date 1611016574316)
+@@ -0,0 +1,30 @@
++misplaced_labels: 
++572
++
++
++confusion_matrix: 
++
++                        Actual True     Actual False
++    
++    Predicted True      1790              234
++    
++    Predicted False     338              1651
++        
++
++
++accuracy_score: 
++85.74632444555196 %
++
++
++classification_report: 
++              precision    recall  f1-score   support
++
++           g       0.84      0.88      0.86      2024
++           h       0.88      0.83      0.85      1989
++
++    accuracy                           0.86      4013
++   macro avg       0.86      0.86      0.86      4013
++weighted avg       0.86      0.86      0.86      4013
++
++
++

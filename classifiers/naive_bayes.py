@@ -8,6 +8,8 @@ class NaiveBayes(Classifiers):
     def __naive_bayes(self):
         gnb = GaussianNB()
         self.label_predicted = gnb.fit(self.sample_train, self.label_train).predict(self.sample_test)
+        print(f'naive score   {gnb.score(self.sample_test, self.label_test)}')
+
         self.calculate_results()
 
     def train(self):

@@ -19,6 +19,7 @@ class Classifiers:
         pass
 
     def plot(self, n_estimators, mean_test_score, title='', xlabel='Estimators', ylabel='Scores'):
+        print(f'best score is {max(mean_test_score)}')
         plt.figure(figsize=(8, 8))
         # plt.plot(n_neighbors, best_model.cv_results_['mean_test_score'].tolist())
         plt.plot(n_estimators, mean_test_score)
@@ -40,11 +41,11 @@ class Classifiers:
         misplaced_labels_ = str(misplaced_labels)
         conf = confusion_matrix(self.label_test, self.label_predicted)
         confusion_matrix_ = f"""
-                        Actual True     Actual False
+                        Actual g     Actual h
     
-    Predicted True      {conf[0][0]}              {conf[0][1]}
+    Predicted g      {conf[0][0]}              {conf[0][1]}
     
-    Predicted False     {conf[1][0]}              {conf[1][1]}
+    Predicted h     {conf[1][0]}              {conf[1][1]}
         """
 
         accuracy_score_ = f'{accuracy_score(self.label_test, self.label_predicted) * 100} %'
@@ -56,13 +57,13 @@ class Classifiers:
             'accuracy_score': accuracy_score_,
             'classification_report': classification_report_
         }
-        print(f"Misplaced labels: {misplaced_labels_}")
-        print(f"Confusion Matrix: {confusion_matrix_}")
-        print(f"Accuracy : {accuracy_score_}")
-        print(f"Report: {classification_report_}")
+        # print(f"Misplaced labels: {misplaced_labels_}")
+        # print(f"Confusion Matrix: {confusion_matrix_}")
+        # print(f"Accuracy : {accuracy_score_}")
+        # print(f"Report: {classification_report_}")
 
         #save data
-        os.makedirs(self.saving_path, 0o666, True)
-        with open(self.saving_path + "/data.txt", "w") as output:
+        os.makedirs(self.saving_path, 0o777, True)
+        with open(self.saving_path + f'/{self.__class__.__name__}_data.txt', "w") as output:
             for key,val in data.items():
                 output.write(f'{key}: \n{val}\n\n\n')

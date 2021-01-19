@@ -13,16 +13,10 @@ class AdaBoost(Classifiers):
         gsf = grid_search.fit(self.sample_train, self.label_train)
         best_params = gsf.best_params_
         best_estimator = gsf.best_estimator_
-        cv_scores = gsf.cv_results_
         print('Best estimator:', best_estimator.get_params()['n_estimators'])
         print("Best: %f using %s" % (gsf.best_score_, best_params))
         self.label_predicted = gsf.predict(self.sample_test)
         self.calculate_results()
-        # means = gsf.cv_results_['mean_test_score']
-        # stds = gsf.cv_results_['std_test_score']
-        # params = gsf.cv_results_['params']
-        # for mean, stdev, param in zip(means, stds, params):
-        #     print("%f (%f) with: %r" % (mean, stdev, param))
         return n_estimators, gsf.cv_results_['mean_test_score']
 
     def train(self):

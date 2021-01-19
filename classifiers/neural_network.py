@@ -7,6 +7,7 @@ from keras.optimizers import Adam
 from sklearn.model_selection import GridSearchCV
 from sklearn.base import BaseEstimator
 
+
 class NN(BaseEstimator):
     def __init__(self, h1=10, h2=10):
         self.h1, self.h2 = h1, h2
@@ -15,16 +16,19 @@ class NN(BaseEstimator):
         self.model.add(Dense(self.h2,  activation='relu'))
         self.model.add(Dense(2, activation='sigmoid'))
         self.model.compile(loss='binary_crossentropy', optimizer=Adam(), metrics=['accuracy'])
+
     def fit(self, X, y):
         self.model.fit(X, y, epochs=100, batch_size=64, shuffle=True, verbose=0)
+
     def predict(self, X):
         return NeuralNetwork.onehot_decode(self.model.predict(X))
+
     def score(self, X, y):
         return accuracy_score(NeuralNetwork.onehot_decode(y), self.predict(X))
 
 
 class NeuralNetwork(Classifiers):
-    def __nerual_network(self):
+    def __neural_network(self):
         onehot_train_labels = self.onehot_encode(self.label_train)
         # h1 = list(range(8, 11))
         # h2 = list(range(8, 11))
@@ -57,7 +61,7 @@ class NeuralNetwork(Classifiers):
         return x, results['mean_test_score']
 
     def train(self):
-        hidden_layers, results = self.__nerual_network()
+        hidden_layers, results = self.__neural_network()
         self.plot(hidden_layers, results, "Neural Network", "Hidden Layers h1,h2", "Fitting scores")
 
     @staticmethod

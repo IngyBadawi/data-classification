@@ -7,6 +7,7 @@ class DecisionTree(Classifiers):
         clf = tree.DecisionTreeClassifier()
         clf = clf.fit(self.sample_train, self.label_train)
         self.label_predicted = clf.predict(self.sample_test)
+        print(f'tree score   {clf.score(self.sample_test, self.label_test)}')
         self.calculate_results()
         #tree.plot_tree(clf)
         #plt.show()

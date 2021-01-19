@@ -21,7 +21,6 @@ if __name__ == '__main__':
         print(f'start training {classifier_name}')
         classifier.train()
         cur = time.time()
-        print((cur-times[-1])/60)
+        print((cur-times[-1]))
         times.append(cur)
-
-    print(f'total time = {(times[-1]-times[0])/60}')
+    print(f'total time = {(times[-1]-times[0])}')

@@ -36,6 +36,7 @@ class DataReader:
                 hadrons.append(([float(features[i]) for i in range(10)], features[10]))
             line = self.file.readline()[:-1]
 
+        # data balancing
         random.shuffle(gammas)
 
         for i in range(HADRONS_SIZE):

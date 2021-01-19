@@ -5,7 +5,6 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras.optimizers import Adam
 from sklearn.model_selection import GridSearchCV
-
 from sklearn.base import BaseEstimator
 
 class NN(BaseEstimator):
@@ -27,36 +26,39 @@ class NN(BaseEstimator):
 class NeuralNetwork(Classifiers):
     def __nerual_network(self):
         onehot_train_labels = self.onehot_encode(self.label_train)
-        #
-        # param_grid = {
-        #     'h1' : list(range(1, 10)),
-        #     'h2' : list(range(1, 10))
-        # }
-        # grid_search = GridSearchCV(NN(), param_grid=param_grid, cv=5)
-        # grid_search.fit(self.sample_train, onehot_train_labels)
-        # best_params = grid_search.best_params_
-        # print('Best params: ', best_params)
-        # best_estimator = grid_search.best_estimator_
+        # h1 = list(range(8, 11))
+        # h2 = list(range(8, 11))
+        h1 = [3, 4, 9 ,10] # After trial and error, the best values of h1 lie in this range, h1 is the number of hidden units in layer 1
+        h2 = [3, 4, 9, 10] # After trial and error, the best values of h2 lie in this range, h2 is the number of hidden units in layer 2
+        x = []
+        for _h1 in h1:
+            for _h2 in h2:
+                st = str(_h1) + ','+ str(_h2)
+                x.append(st)
+        x = np.array(x)
 
-        # Best values were h1=10 & h2=10
-        best_estimator = NN(h1=10, h2=10)
+        param_grid = {
+            'h1' : h1,
+            'h2' : h2
+        }
+        grid_search = GridSearchCV(NN(), param_grid=param_grid, cv=5)
+        grid_search.fit(self.sample_train, onehot_train_labels)
+        best_params = grid_search.best_params_
+        results = grid_search.cv_results_
+        print('Best params: ', best_params)
+        best_estimator = grid_search.best_estimator_
+
+        # Best values were h1=9 & h2=4
+        #best_estimator = NN(h1=9, h2=4)
+
         best_estimator.fit(self.sample_train, onehot_train_labels)
         self.label_predicted = best_estimator.predict(self.sample_test)
-
-
         self.calculate_results()
-        # a = accuracy_score(self.onehot_decode(self.label_predicted), self.label_test)
-        # print('Accuracy is:', a * 100)
-        # plt.plot(history.history['acc'])
-        # plt.plot(history.history['val_acc'])
-        # plt.title('Model accuracy')
-        # plt.ylabel('Accuracy')
-        # plt.xlabel('Epoch')
-        # plt.legend(['Train', 'Test'], loc='upper left')
-        # plt.show()
+        return x, results['mean_test_score']
 
     def train(self):
-        self.__nerual_network()
+        hidden_layers, results = self.__nerual_network()
+        self.plot(hidden_layers, results, "Neural Network", "Hidden Layers h1,h2", "Fitting scores")
 
     @staticmethod
     def onehot_encode( old_labels):

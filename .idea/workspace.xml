@@ -4,19 +4,17 @@
     <list default="true" id="1663d8cd-d652-4796-aa78-edae0a206c41" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/output/AdaBoost/AdaBoost_scores_graph.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/output/AdaBoost/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/DecisionTree/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_scores_graph.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/KNearestNeighbors/data.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/output/NaiveBayes/data.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/output/RandomForest/RandomForest_scores_graph.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/output/RandomForest/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Data_Classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Data_Classification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifiers/ada_boost.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/ada_boost.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifiers/classifiers.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/classifiers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/k_nearest_neighbors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classifiers/random_forest.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/random_forest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classifiers/neural_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/classifiers/neural_network.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/DecisionTree/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/DecisionTree/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_scores_graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/KNearestNeighbors/KNearestNeighbors_scores_graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/KNearestNeighbors/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output/KNearestNeighbors/data.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,28 +67,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifiers/ada_boost.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="decision_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Data_Classification" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classifiers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifiers/decision_tree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,13 +141,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="neural_network" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Data_Classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classifiers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifiers/neural_network.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.neural_network" />
         <item itemvalue="Python.k_nearest_neighbors" />
         <item itemvalue="Python.ada_boost" />
         <item itemvalue="Python.naive_bayes" />
-        <item itemvalue="Python.decision_tree" />
       </list>
     </recent_temporary>
   </component>
@@ -221,8 +218,5 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="changes in adaboost,knn,random forest" />
     <option name="LAST_COMMIT_MESSAGE" value="changes in adaboost,knn,random forest" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/data_classification$main.coverage" NAME="main Coverage Results" MODIFIED="1611015440320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
